@@ -1,0 +1,7 @@
+.keyword-wrapper {
+  width: 1024px;
+
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+}

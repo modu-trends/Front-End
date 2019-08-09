@@ -1,0 +1,33 @@
+.keyword-box {
+  flex: 1;
+  border-top: 1px solid #444;
+  margin: 0 20px;
+}
+
+.category-title {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  align-items: start;
+  width: 100%;
+}
+
+.keyword-list {
+  display: flex;
+}
+
+.keyword-list-num {
+  font-size: 24px;
+  line-height: 32px;
+  width: 56px;
+  font-weight: 300;
+}
+
+.keyword-list-item {
+  line-height: 32px;
+  padding-right: 26px;
+  overflow-wrap: break-word;
+  width: calc(100% - 24px);
+  font-size: 24px;
+  font-weight: 300;
+}
