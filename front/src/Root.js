@@ -1,10 +1,11 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import App from "./components/App";
 
-// import { Provider } from "react-redux";
 // import store from "store/configure";
-
-import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { BrowserRouter, Router, Route } from "react-router-dom";
+import createHistory from "history/createBrowserHistory";
 
 const Root = () => {
   return (
@@ -12,9 +13,9 @@ const Root = () => {
     //   <App />
     // </Provider>
 
-    <BrowserRouter>
+    <Router history={createHistory()}>
       <App />
-    </BrowserRouter>
+    </Router>
   );
 };
 
