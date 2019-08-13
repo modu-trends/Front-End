@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import KeywordWrapper from "../components/keyword/KeywordWrapper";
 import KeywordBox from "../components/keyword/KeywordBox";
 

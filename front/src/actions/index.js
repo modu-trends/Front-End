@@ -1,10 +1,12 @@
 import axios from "axios";
-export const FETCH_MOIM = "FETCH_MOIM";
 
-export function fetchMoim() {
-  const request = axios.get("/api/moim/");
+export const FETCH_ARTICLE = "FETCH_ARTICLE";
+
+export function fetchArticle() {
+  const request = axios.get("/api/articles/");
+  
   return {
-    type: FETCH_MOIM,
+    type: FETCH_ARTICLE,
     payload: request
   };
 }

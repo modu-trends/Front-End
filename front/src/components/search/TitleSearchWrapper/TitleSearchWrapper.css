@@ -1,0 +1,25 @@
+.small-search-wrapper{
+    width:900px;
+    height:80px;
+    padding-top:100px;
+    display:flex;
+    margin:0 auto;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.small-search-wrapper > .title{
+    color:#000;
+    font-size:38px;
+    display:flex;
+    padding-right:170px;
+    justify-content: flex-start;
+}
+
+
+.small-search-wrapper > .search-bar{
+    display:flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}

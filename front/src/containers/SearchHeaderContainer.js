@@ -1,13 +1,9 @@
 import React, { Component } from "react";
 import SearchForm from "../components/search/SearchForm";
-import SearchWrapper from "../components/search/SearchWrapper";
-
-import ArticleWrapper from "../components/article/ArticleWrapper";
-import ArticleBox from "../components/article/ArticleBox";
+import TitleSearchWrapper from "../components/search/TitleSearchWrapper";
 
 
-
-export class SearchContainer extends Component {
+export class SearchHeaderContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -41,9 +37,8 @@ export class SearchContainer extends Component {
   }
 
   render() {
-    console.log(this.state.value);
     return (
-      <SearchWrapper>
+      <TitleSearchWrapper>
         <SearchForm
           active={this.state.active}
           toggleClass={this.toggleClass}
@@ -51,10 +46,9 @@ export class SearchContainer extends Component {
           handleSubmit={this.handleSubmit}
           value={this.state.value}
         />
-      </SearchWrapper>
-     
+        </TitleSearchWrapper>
     );
   }
 }
 
-export default SearchContainer;
+export default SearchHeaderContainer;
