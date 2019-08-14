@@ -1,7 +1,11 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import SearchForm from "../components/search/SearchForm";
 import SearchWrapper from "../components/search/SearchWrapper";
+
+import ArticleWrapper from "../components/article/ArticleWrapper";
+import ArticleBox from "../components/article/ArticleBox";
+
+
 
 export class SearchContainer extends Component {
   constructor(props) {
@@ -18,11 +22,15 @@ export class SearchContainer extends Component {
   /* Toggle Button */
   toggleClass() {
     const currentState = this.state.active;
-    this.setState({ active: !currentState });
+    this.setState({
+      active: !currentState
+    });
   }
 
   handleChange(event) {
-    this.setState({ value: event.target.value });
+    this.setState({
+      value: event.target.value
+    });
   }
 
   handleSubmit(e) {
@@ -44,6 +52,7 @@ export class SearchContainer extends Component {
           value={this.state.value}
         />
       </SearchWrapper>
+     
     );
   }
 }

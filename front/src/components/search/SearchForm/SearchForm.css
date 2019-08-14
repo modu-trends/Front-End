@@ -1,23 +1,21 @@
 .search-form {
-  width: 600px;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
-  padding: 8px;
-  border: 1px solid #fff;
+  padding: 9px;
+  border: 1px solid #000;
   border-radius: 30px;
   background: #fff;
 }
 
 .search-form-active {
-  width: 600px;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
-  padding: 8px;
-  border: 1px solid #03c4eb;
+  padding: 9px;
+  border: 1px solid #000;
   border-radius: 30px;
   background: #fff;
 }

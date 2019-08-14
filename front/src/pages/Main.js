@@ -1,13 +1,12 @@
 import React from "react";
 import MainStructure from "../components/structure/MainStructure";
-import KeywordContainer from "../containers/KeywordContainer";
-import SearchContainer from "../containers/SearchContainer";
+
+import MainContainer from "../containers/MainContainer";
 
 const Main = () => {
   return (
     <MainStructure>
-      <SearchContainer />
-      <KeywordContainer />
+      <MainContainer />
     </MainStructure>
   );
 };
