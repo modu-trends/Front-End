@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const FETCH_ARTICLE = "FETCH_ARTICLE";
+<<<<<<< HEAD
 export const FETCH_KEYWORD = "FETCH_KEYWORD";
 
 export function fetchArticle(keyword) {
@@ -27,6 +28,14 @@ export function fetchKeyword() {
 
   return {
     type: FETCH_KEYWORD,
+=======
+
+export function fetchArticle() {
+  const request = axios.get("/api/articles/");
+  
+  return {
+    type: FETCH_ARTICLE,
+>>>>>>> da2995212883cb2e4d9bec7dfb344abe4e000df6
     payload: request
   };
 }

@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+<<<<<<< HEAD
 
+=======
+>>>>>>> da2995212883cb2e4d9bec7dfb344abe4e000df6
 import KeywordWrapper from "../components/keyword/KeywordWrapper";
 import KeywordBox from "../components/keyword/KeywordBox";
 

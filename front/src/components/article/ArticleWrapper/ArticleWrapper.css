@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 .article-wrapper {
   width: 900px;
   /* background:#ddd; */
   margin: 50px auto;
   /* overflow: auto; */
+=======
+.article-wrapper{
+    width:900px;
+    /* background:#ddd; */
+    margin:50px auto;
+>>>>>>> da2995212883cb2e4d9bec7dfb344abe4e000df6
 }
