@@ -52,7 +52,6 @@ export class MainContainer extends Component {
   }
 
   renderKeyword() {
-    console.log(this.props.keywordList);
     return this.props.keywordList;
   }
 

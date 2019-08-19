@@ -2,13 +2,12 @@ import React, { Component } from "react";
 import SearchForm from "../components/search/SearchForm";
 import TitleSearchWrapper from "../components/search/TitleSearchWrapper";
 
-
 export class SearchHeaderContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
       active: false,
-      value: ""
+      value: this.props.keyword
     };
 
     this.toggleClass = this.toggleClass.bind(this);
@@ -31,8 +30,7 @@ export class SearchHeaderContainer extends Component {
 
   handleSubmit(e) {
     if (e.key === "Enter") {
-      const { href } = window.location;
-      window.location.href = `${href}search/${this.state.value}`;
+      this.props.props.history.push(`/search/${this.state.value}`);
     }
   }
 
@@ -46,7 +44,7 @@ export class SearchHeaderContainer extends Component {
           handleSubmit={this.handleSubmit}
           value={this.state.value}
         />
-        </TitleSearchWrapper>
+      </TitleSearchWrapper>
     );
   }
 }

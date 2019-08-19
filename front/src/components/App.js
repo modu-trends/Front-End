@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Main, Search, NotFound } from "../pages";
+import { Main, Search, Petition, NotFound } from "../pages";
 import { Switch, Route } from "react-router-dom";
 
 // function App() {
@@ -29,6 +29,7 @@ class App extends Component {
       <Switch>
         <Route path="/" exact={true} component={Main} />
         <Route path="/search/:keyword" exact={true} component={Search} />
+        <Route path="/petition/:id" exact={true} component={Petition} />
         <Route component={NotFound} />
       </Switch>
     );

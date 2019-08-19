@@ -1,12 +1,19 @@
 import React from "react";
+
 import MainStructure from "../components/structure/MainStructure";
 
-import MainContainer from "../containers/MainContainer";
+import SearchContainer from "../containers/SearchContainer";
+import KeywordContainer from "../containers/KeywordContainer";
 
-const Main = () => {
+import MainWrapper from "../components/main/MainWrapper";
+
+const Main = props => {
   return (
     <MainStructure>
-      <MainContainer />
+      <MainWrapper>
+        <SearchContainer props={props} />
+        <KeywordContainer props={props} />
+      </MainWrapper>
     </MainStructure>
   );
 };

@@ -1,11 +1,7 @@
 import React, { Component } from "react";
+
 import SearchForm from "../components/search/SearchForm";
 import SearchWrapper from "../components/search/SearchWrapper";
-
-import ArticleWrapper from "../components/article/ArticleWrapper";
-import ArticleBox from "../components/article/ArticleBox";
-
-
 
 export class SearchContainer extends Component {
   constructor(props) {
@@ -35,13 +31,11 @@ export class SearchContainer extends Component {
 
   handleSubmit(e) {
     if (e.key === "Enter") {
-      const { href } = window.location;
-      window.location.href = `${href}search/${this.state.value}`;
+      this.props.props.history.push(`/search/${this.state.value}`);
     }
   }
 
   render() {
-    console.log(this.state.value);
     return (
       <SearchWrapper>
         <SearchForm
@@ -52,7 +46,6 @@ export class SearchContainer extends Component {
           value={this.state.value}
         />
       </SearchWrapper>
-     
     );
   }
 }

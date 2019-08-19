@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../../assets/images/logo_2.svg";
 
+import NaverLogin from "../../login/NaverLogin";
+
 const Header = ({ onLogout }) => (
   <div className="header">
     <div className="header-content">
@@ -13,7 +15,8 @@ const Header = ({ onLogout }) => (
           </Link>
         </div>
         <div className="header-topbar-right">
-          <button className="login-button">로그인</button>
+          <NaverLogin />
+          {/* <button className="login-button">로그인</button> */}
         </div>
       </div>
     </div>

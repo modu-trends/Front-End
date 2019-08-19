@@ -16,6 +16,7 @@ const SearchForm = props => {
         onBlur={props.toggleClass}
         onChange={props.handleChange}
         onKeyPress={props.handleSubmit}
+        value={props.value}
       />
       <Link to={`/search/${props.value}`}>
         <button className="search-button">

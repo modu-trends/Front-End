@@ -46,6 +46,10 @@
   background: none;
 }
 
+.naverIdLogin {
+  padding: 10px;
+  margin-right: 8px;
+}
 .login-button:hover {
   color: #fff;
   background: #000;

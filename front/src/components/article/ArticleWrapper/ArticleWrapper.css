@@ -1,5 +1,6 @@
-.article-wrapper{
-    width:900px;
-    /* background:#ddd; */
-    margin:50px auto;
+.article-wrapper {
+  width: 900px;
+  /* background:#ddd; */
+  margin: 50px auto;
+  /* overflow: auto; */
 }
