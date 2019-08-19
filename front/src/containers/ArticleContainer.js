@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 import React, { Component } from "react";
-=======
-import React, {Component} from 'react'
->>>>>>> da2995212883cb2e4d9bec7dfb344abe4e000df6
 
 import ArticleWrapper from "../components/article/ArticleWrapper";
 import ArticleBox from "../components/article/ArticleBox";
 
-<<<<<<< HEAD
 import InfiniteScroll from "react-infinite-scroller";
 
 import Loader from "react-loader-spinner";
@@ -75,19 +70,3 @@ export class ArticleContainer extends Component {
   }
 }
 export default ArticleContainer;
-=======
-
-export class ArticleContainer extends Component {
-    render(){
-        return(
-            <ArticleWrapper>
-                <ArticleBox></ArticleBox>
-                <ArticleBox></ArticleBox>
-                <ArticleBox></ArticleBox>
-            </ArticleWrapper>
-        )
-    }
-}
-
-export default ArticleContainer;
->>>>>>> da2995212883cb2e4d9bec7dfb344abe4e000df6

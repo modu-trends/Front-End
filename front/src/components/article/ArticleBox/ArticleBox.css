@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .article-box {
   width: 100%;
   height: 70px;
@@ -43,49 +42,3 @@
 .like-box .icon {
   margin: 0 15px 0 15px;
 }
-=======
-.article-box{
-    width:100%;
-    height:70px;
-    border-bottom:1px solid #ddd;
-    padding:20px 0;
-    display:flex;
-    flex-direction: column;
-}
-
-.article-box:hover{
-    background:#f0f0f0;
-    cursor: pointer;
-}
-
-.article-box > .title{
-    font-size:18px;
-    color:#000;
-    font-weight:300;
-    overflow:hidden;
-}
-
-.article-box > .info-box{
-    display:flex;
-    flex-direction: row;
-    margin-top:10px;
-    font-size:13px;
-    font-weight:300;
-    justify-items: flex-end;
-}
-
-.article-box  .date-box{
-    justify-content: flex-start;
-}
-
-.article-box  .like-box{
-    display:flex;
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: flex-end;
-}
-
-.like-box .icon{
-    margin:0 15px 0 15px;
-}
->>>>>>> da2995212883cb2e4d9bec7dfb344abe4e000df6

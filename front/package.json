@@ -17,10 +17,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-tag-cloud": "^1.3.2",
-<<<<<<< HEAD
     "react-tagcloud": "^1.4.0",
-=======
->>>>>>> da2995212883cb2e4d9bec7dfb344abe4e000df6
     "react-wordcloud": "^1.0.8",
     "redux": "^4.0.4",
     "redux-promise": "^0.6.0"

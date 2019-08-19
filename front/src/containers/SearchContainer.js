@@ -1,15 +1,7 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
 
-=======
->>>>>>> da2995212883cb2e4d9bec7dfb344abe4e000df6
 import SearchForm from "../components/search/SearchForm";
 import SearchWrapper from "../components/search/SearchWrapper";
-
-import ArticleWrapper from "../components/article/ArticleWrapper";
-import ArticleBox from "../components/article/ArticleBox";
-
-
 
 export class SearchContainer extends Component {
   constructor(props) {
@@ -54,7 +46,6 @@ export class SearchContainer extends Component {
           value={this.state.value}
         />
       </SearchWrapper>
-     
     );
   }
 }
