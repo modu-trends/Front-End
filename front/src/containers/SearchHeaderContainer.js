@@ -31,6 +31,7 @@ export class SearchHeaderContainer extends Component {
   handleSubmit(e) {
     if (e.key === "Enter") {
       this.props.props.history.push(`/search/${this.state.value}`);
+      window.location.reload();
     }
   }
 

@@ -26,21 +26,26 @@ export class ArticleContainer extends Component {
       this.setState({ loadState: false });
       axios
         .get(
-          "https://www.everytrend.kr/petition/" +
-            page +
-            "/" +
-            this.state.keyword
+         "/api/petition/"+page +"/" +this.state.keyword
         )
         .then(response => {
           var newArticle = [];
           var article = this.state.article;
 
-          newArticle = article.concat(response["data"]["data"]);
+          if(response["data"]["status"] == "success"){
 
-          this.setState({
-            article: newArticle,
-            loadState: true
-          });
+            newArticle = article.concat(response["data"]["data"]);
+
+            this.setState({
+              article: newArticle,
+              loadState: true
+            });
+          } 
+          else{
+            this.setState({
+              hasMore: false
+            });
+          }
         });
     }
   }
@@ -49,8 +54,29 @@ export class ArticleContainer extends Component {
     var items = [];
 
     this.state.article.map((article, i) => {
-      console.log(article);
-      items.push(<ArticleBox key={article.id} articleData={article} />);
+    
+      const category = {
+        "0":"전체",
+        "35":"정치개혁",
+        "36":"외교/통일/국방",
+        "37":"일자리",
+        "38":"미래",
+        "39":"성장동력",
+        "40":"농산어촌",
+        "41":"보건복지",
+        "42":"육아/교육",
+        "43":"안전/환경",
+        "44":"저출산/고령화대책",
+        "45":"행정",
+        "46":"반려동물",
+        "47":"교통/건축/국토",
+        "48":"경제민주화",
+        "49":"인권/성평등",
+        "50":"문화/예술/체육/언론",
+        "51":"기타"
+      }
+
+      items.push(<ArticleBox key={article.id} articleData={article} articleCategory={category[article.category]}/>);
     });
 
     return (
@@ -60,7 +86,7 @@ export class ArticleContainer extends Component {
           loadMore={this.renderArticle.bind(this)}
           hasMore={this.state.hasMore}
           loader={
-            <Loader type="ThreeDots" color="#00BFFF" height="50" width="50" />
+            <Loader type="ThreeDots" width="50" height="50" color="#000" className="loader" />
           }
         >
           {items}
@@ -69,4 +95,7 @@ export class ArticleContainer extends Component {
     );
   }
 }
+
+
+
 export default ArticleContainer;

@@ -1,0 +1,9 @@
+.petition-left-wrapper{
+    display:flex;
+    padding:20px;
+    flex-direction: column;
+    border-right:1px solid #f0f0f0;
+    width:100%;
+    min-height:800px;
+    flex-grow: 1;
+}

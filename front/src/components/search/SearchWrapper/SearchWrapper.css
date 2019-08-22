@@ -1,7 +1,13 @@
 .search-wrapper {
-  width: 100%;
-  padding: 20px;
+  width: 940px;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+ justify-content: center;
   text-align: center;
+  margin:0 auto;
+  height:100%;
 }
 
 .search-wrapper .title {

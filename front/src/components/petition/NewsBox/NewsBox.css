@@ -1,0 +1,14 @@
+.news-wrapper{
+    min-height:80px;
+  
+}
+
+.news-wrapper .title-box{
+    width:100%;
+    border-bottom:1px solid #f0f0f0;
+}
+
+.news-wrapper .title{
+    font-size:17px;
+    font-weight: 400;
+}

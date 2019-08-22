@@ -1,0 +1,28 @@
+.header-wrapper{
+    text-align:center;
+    border-bottom:1px solid #f0f0f0;
+}
+
+.header-wrapper > .title{
+    font-size:30px;
+    font-weight: 400;
+}
+.header-wrapper .date{
+    font-weight:300;
+    font-size:15px;
+}
+
+.header-flex-box{
+    display:flex;
+    flex-direction:row;   
+    justify-content: center;
+}
+
+.header-flex-box .bold{
+    font-weight:500;
+    font-size:16px;
+}
+
+.flex-box{
+    flex:1;
+}

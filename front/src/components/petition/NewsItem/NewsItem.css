@@ -1,0 +1,19 @@
+.news-item{
+    font-size:13px;
+    display: flex;
+    margin:5px 0 0 0;
+}
+
+.news-item-link{
+    color:#000;
+    text-decoration: none;
+}
+
+.news-item-link:hover{
+    text-decoration: underline;
+}
+
+.news-item-index{
+    margin-right:7px;
+    font-weight: 500;
+}

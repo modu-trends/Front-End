@@ -1,0 +1,88 @@
+.report-wrapper {
+    width:100px;
+    height:50px;
+    background:#fff;
+    border:1px solid #000;
+    border-radius:5px;
+    font-size:17px;
+    margin:5px;
+    
+}
+
+.report-wrapper:hover{
+    width:100px;
+    height:50px;
+    background:#fff;
+    color:#fff;
+    border:1px solid #000;
+    border-radius:5px;
+    background:#000;
+    cursor:pointer;
+}
+
+.report-box{
+    padding:20px 50px 20px 50px;
+    width:500px;
+}
+
+.ReactModal__Overlay{
+    z-index:9999;
+}
+
+.report-title{
+    font-size:20px;
+}
+
+.report-sub-title{
+    font-size:13px;
+    margin:5px 0 20px 0;
+    font-weight: 300;
+    color: #444;
+}
+
+.option{
+    font-size:13px;
+    margin:10px 0 10px 0;
+}
+
+.content-input-box{
+    width:100%;
+}
+
+.content-input{
+    width:490px;
+    border:1px solid #ddd;
+    outline:none;
+    padding:5px;
+    height:100px;
+    resize: none;
+}
+
+.cancel-button{
+    width:100px;
+    height:40px;
+    background:#fff;
+    border:1px solid #000;
+    border-radius:5px;
+    font-size:15px;
+    margin:5px;
+    cursor:pointer;
+}
+
+.submit-button{
+    width:100px;
+    height:40px;
+    background:#000;
+    border:1px solid #000;
+    color:#fff;
+    border-radius:5px;
+    font-size:15px;
+  
+    cursor:pointer;
+    
+}
+
+.report-button-box{
+    margin-top:20px;
+    float:right;
+}

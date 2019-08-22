@@ -10,8 +10,8 @@ import MainWrapper from "../components/main/MainWrapper";
 const Main = props => {
   return (
     <MainStructure>
+      <SearchContainer props={props} />
       <MainWrapper>
-        <SearchContainer props={props} />
         <KeywordContainer props={props} />
       </MainWrapper>
     </MainStructure>

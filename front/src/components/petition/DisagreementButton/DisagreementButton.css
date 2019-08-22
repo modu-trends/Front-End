@@ -1,0 +1,25 @@
+.button-wrapper {
+    width:180px;
+    height:50px;
+    background:#fff;
+    border:1px solid #000;
+    border-radius:5px;
+    font-size:17px;
+    margin:5px;
+    
+}
+
+.button-wrapper:hover{
+    width:180px;
+    height:50px;
+    background:#fff;
+    color:#fff;
+    border:1px solid #000;
+    border-radius:5px;
+    background:#000;
+    cursor:pointer;
+}
+
+.button-count{
+    font-size:13px;
+}

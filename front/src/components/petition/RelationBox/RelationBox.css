@@ -1,0 +1,15 @@
+.relation-wrapper{
+    margin-top:50px;
+}
+    
+  
+
+.relation-wrapper .title-box{
+    width:100%;
+    border-bottom:1px solid #f0f0f0;
+}
+
+.relation-wrapper .title{
+    font-size:17px;
+    font-weight: 400;
+}
